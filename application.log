@@ -1,0 +1,578 @@
+2024-05-09T20:31:31.533+03:00  INFO 68444 --- [ClusteredData-Warehouse] [main] C.ClusteredDataWarehouseApplicationTests : Starting ClusteredDataWarehouseApplicationTests using Java 20.0.2 with PID 68444 (started by Samer in C:\Users\Samer\IdeaProjects\ClusteredData-Warehouse)
+2024-05-09T20:31:31.536+03:00  INFO 68444 --- [ClusteredData-Warehouse] [main] C.ClusteredDataWarehouseApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2024-05-09T20:31:32.515+03:00  INFO 68444 --- [ClusteredData-Warehouse] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-09T20:31:32.594+03:00  INFO 68444 --- [ClusteredData-Warehouse] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 1 JPA repository interface.
+2024-05-09T20:31:33.250+03:00  INFO 68444 --- [ClusteredData-Warehouse] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-09T20:31:33.312+03:00  INFO 68444 --- [ClusteredData-Warehouse] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-09T20:31:33.372+03:00  INFO 68444 --- [ClusteredData-Warehouse] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-09T20:31:33.787+03:00  INFO 68444 --- [ClusteredData-Warehouse] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-09T20:31:33.840+03:00  INFO 68444 --- [ClusteredData-Warehouse] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-09T20:31:34.287+03:00  INFO 68444 --- [ClusteredData-Warehouse] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@44bbb7c6
+2024-05-09T20:31:34.290+03:00  INFO 68444 --- [ClusteredData-Warehouse] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-09T20:31:35.483+03:00  INFO 68444 --- [ClusteredData-Warehouse] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-09T20:31:35.544+03:00  INFO 68444 --- [ClusteredData-Warehouse] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T20:31:36.350+03:00  WARN 68444 --- [ClusteredData-Warehouse] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-09T20:31:37.001+03:00  INFO 68444 --- [ClusteredData-Warehouse] [main] C.ClusteredDataWarehouseApplicationTests : Started ClusteredDataWarehouseApplicationTests in 5.879 seconds (process running for 7.178)
+2024-05-09T20:31:38.153+03:00  INFO 68444 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Trying to get deal with ID [1]
+2024-05-09T20:31:38.174+03:00  INFO 68444 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Deal with id [1] is successfully retrieved
+2024-05-09T20:31:38.328+03:00  INFO 68444 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Validating currencies: fromCurrencyISOCode=JOD, toCurrencyISOCode=USD
+2024-05-09T20:31:38.335+03:00  INFO 68444 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Currency validation successful
+2024-05-09T20:31:38.335+03:00  INFO 68444 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Validating future timestamp: localDateTime=2012-01-22T12:12:12
+2024-05-09T20:31:38.335+03:00  INFO 68444 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Deal timestamp is present or past
+2024-05-09T20:31:38.336+03:00  INFO 68444 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Trying to save Deal with ID [3]
+2024-05-09T20:31:38.353+03:00  INFO 68444 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Trying to get deal with ID [9999]
+2024-05-09T20:31:38.377+03:00  INFO 68444 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Validating currencies: fromCurrencyISOCode=JOD, toCurrencyISOCode=invalid
+2024-05-09T20:31:38.400+03:00  INFO 68444 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Validating currencies: fromCurrencyISOCode=invalid, toCurrencyISOCode=USD
+2024-05-09T20:31:38.414+03:00  INFO 68444 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Validating currencies: fromCurrencyISOCode=JOD, toCurrencyISOCode=USD
+2024-05-09T20:31:38.414+03:00  INFO 68444 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Currency validation successful
+2024-05-09T20:31:38.414+03:00  INFO 68444 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Validating future timestamp: localDateTime=2012-01-22T12:12:12
+2024-05-09T20:31:38.414+03:00  INFO 68444 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Deal timestamp is present or past
+2024-05-09T20:31:38.414+03:00  INFO 68444 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Trying to save Deal with ID [5]
+2024-05-09T20:31:38.415+03:00  INFO 68444 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Deal with ID [5] successfully saved
+2024-05-09T20:31:38.432+03:00  INFO 68444 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Trying to get all deals
+2024-05-09T20:31:38.432+03:00  INFO 68444 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Deals were retrieved successfully
+2024-05-09T20:31:38.450+03:00  INFO 68444 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Trying to get all deals
+2024-05-09T20:31:38.450+03:00  INFO 68444 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : No deals were found
+2024-05-09T20:31:38.495+03:00  INFO 68444 --- [ClusteredData-Warehouse] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T20:31:38.502+03:00  INFO 68444 --- [ClusteredData-Warehouse] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-09T20:31:38.528+03:00  INFO 68444 --- [ClusteredData-Warehouse] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-09T20:44:23.767+03:00  INFO 74612 --- [ClusteredData-Warehouse] [main] C.ClusteredDataWarehouseApplicationTests : Starting ClusteredDataWarehouseApplicationTests using Java 20.0.2 with PID 74612 (started by Samer in C:\Users\Samer\IdeaProjects\ClusteredData-Warehouse)
+2024-05-09T20:44:23.769+03:00  INFO 74612 --- [ClusteredData-Warehouse] [main] C.ClusteredDataWarehouseApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2024-05-09T20:44:24.759+03:00  INFO 74612 --- [ClusteredData-Warehouse] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-09T20:44:24.829+03:00  INFO 74612 --- [ClusteredData-Warehouse] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 1 JPA repository interface.
+2024-05-09T20:44:25.516+03:00  INFO 74612 --- [ClusteredData-Warehouse] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-09T20:44:25.595+03:00  INFO 74612 --- [ClusteredData-Warehouse] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-09T20:44:25.714+03:00  INFO 74612 --- [ClusteredData-Warehouse] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-09T20:44:26.185+03:00  INFO 74612 --- [ClusteredData-Warehouse] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-09T20:44:26.223+03:00  INFO 74612 --- [ClusteredData-Warehouse] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-09T20:44:26.772+03:00  INFO 74612 --- [ClusteredData-Warehouse] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@cec590c
+2024-05-09T20:44:26.775+03:00  INFO 74612 --- [ClusteredData-Warehouse] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-09T20:44:28.091+03:00  INFO 74612 --- [ClusteredData-Warehouse] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-09T20:44:28.174+03:00  INFO 74612 --- [ClusteredData-Warehouse] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T20:44:28.866+03:00  WARN 74612 --- [ClusteredData-Warehouse] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-09T20:44:29.466+03:00  INFO 74612 --- [ClusteredData-Warehouse] [main] C.ClusteredDataWarehouseApplicationTests : Started ClusteredDataWarehouseApplicationTests in 6.107 seconds (process running for 7.444)
+2024-05-09T20:44:30.764+03:00  INFO 74612 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Validating currencies: fromCurrencyISOCode=JOD, toCurrencyISOCode=USD
+2024-05-09T20:44:30.773+03:00  INFO 74612 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Currency validation successful
+2024-05-09T20:44:30.774+03:00  INFO 74612 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Validating future timestamp: localDateTime=2012-01-22T12:12:12
+2024-05-09T20:44:30.775+03:00  INFO 74612 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Deal timestamp is present or past
+2024-05-09T20:44:30.776+03:00  INFO 74612 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Trying to save Deal with ID [3]
+2024-05-09T20:44:30.939+03:00  INFO 74612 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Trying to get deal with ID [9999]
+2024-05-09T20:44:30.953+03:00  INFO 74612 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Trying to get deal with ID [1]
+2024-05-09T20:44:30.954+03:00  INFO 74612 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Deal with id [1] is successfully retrieved
+2024-05-09T20:44:30.974+03:00  INFO 74612 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Validating currencies: fromCurrencyISOCode=JOD, toCurrencyISOCode=invalid
+2024-05-09T20:44:30.989+03:00  INFO 74612 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Validating currencies: fromCurrencyISOCode=invalid, toCurrencyISOCode=USD
+2024-05-09T20:44:31.004+03:00  INFO 74612 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Validating currencies: fromCurrencyISOCode=JOD, toCurrencyISOCode=USD
+2024-05-09T20:44:31.004+03:00  INFO 74612 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Currency validation successful
+2024-05-09T20:44:31.004+03:00  INFO 74612 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Validating future timestamp: localDateTime=2012-01-22T12:12:12
+2024-05-09T20:44:31.004+03:00  INFO 74612 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Deal timestamp is present or past
+2024-05-09T20:44:31.004+03:00  INFO 74612 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Trying to save Deal with ID [5]
+2024-05-09T20:44:31.006+03:00  INFO 74612 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Deal with ID [5] successfully saved
+2024-05-09T20:44:31.019+03:00  INFO 74612 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Trying to get all deals
+2024-05-09T20:44:31.019+03:00  INFO 74612 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Deals were retrieved successfully
+2024-05-09T20:44:31.049+03:00  INFO 74612 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Trying to get all deals
+2024-05-09T20:44:31.050+03:00  INFO 74612 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : No deals were found
+2024-05-09T20:44:31.092+03:00  INFO 74612 --- [ClusteredData-Warehouse] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T20:44:31.102+03:00  INFO 74612 --- [ClusteredData-Warehouse] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-09T20:44:31.127+03:00  INFO 74612 --- [ClusteredData-Warehouse] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-09T20:48:34.308+03:00  INFO 67556 --- [ClusteredData-Warehouse] [main] C.ClusteredDataWarehouseApplicationTests : Starting ClusteredDataWarehouseApplicationTests using Java 20.0.2 with PID 67556 (started by Samer in C:\Users\Samer\IdeaProjects\ClusteredData-Warehouse)
+2024-05-09T20:48:34.310+03:00  INFO 67556 --- [ClusteredData-Warehouse] [main] C.ClusteredDataWarehouseApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2024-05-09T20:48:35.318+03:00  INFO 67556 --- [ClusteredData-Warehouse] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-09T20:48:35.407+03:00  INFO 67556 --- [ClusteredData-Warehouse] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72 ms. Found 1 JPA repository interface.
+2024-05-09T20:48:35.991+03:00  INFO 67556 --- [ClusteredData-Warehouse] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-09T20:48:36.061+03:00  INFO 67556 --- [ClusteredData-Warehouse] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-09T20:48:36.110+03:00  INFO 67556 --- [ClusteredData-Warehouse] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-09T20:48:36.594+03:00  INFO 67556 --- [ClusteredData-Warehouse] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-09T20:48:36.634+03:00  INFO 67556 --- [ClusteredData-Warehouse] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-09T20:48:37.090+03:00  INFO 67556 --- [ClusteredData-Warehouse] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@18715bb
+2024-05-09T20:48:37.093+03:00  INFO 67556 --- [ClusteredData-Warehouse] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-09T20:48:38.329+03:00  INFO 67556 --- [ClusteredData-Warehouse] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-09T20:48:38.404+03:00  INFO 67556 --- [ClusteredData-Warehouse] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T20:48:39.005+03:00  WARN 67556 --- [ClusteredData-Warehouse] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-09T20:48:39.556+03:00  INFO 67556 --- [ClusteredData-Warehouse] [main] C.ClusteredDataWarehouseApplicationTests : Started ClusteredDataWarehouseApplicationTests in 5.645 seconds (process running for 6.878)
+2024-05-09T20:48:40.820+03:00  INFO 67556 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Validating currencies: fromCurrencyISOCode=JOD, toCurrencyISOCode=USD
+2024-05-09T20:48:40.828+03:00  INFO 67556 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Currency validation successful
+2024-05-09T20:48:40.828+03:00  INFO 67556 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Validating future timestamp: localDateTime=2012-01-22T12:12:12
+2024-05-09T20:48:40.828+03:00  INFO 67556 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Deal timestamp is present or past
+2024-05-09T20:48:40.828+03:00  INFO 67556 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Trying to save Deal with ID [5]
+2024-05-09T20:48:40.848+03:00  INFO 67556 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Deal with ID [5] successfully saved
+2024-05-09T20:48:41.072+03:00  INFO 67556 --- [ClusteredData-Warehouse] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T20:48:41.079+03:00  INFO 67556 --- [ClusteredData-Warehouse] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-09T20:48:41.101+03:00  INFO 67556 --- [ClusteredData-Warehouse] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-09T20:50:28.546+03:00  INFO 30336 --- [ClusteredData-Warehouse] [main] C.ClusteredDataWarehouseApplicationTests : Starting ClusteredDataWarehouseApplicationTests using Java 20.0.2 with PID 30336 (started by Samer in C:\Users\Samer\IdeaProjects\ClusteredData-Warehouse)
+2024-05-09T20:50:28.548+03:00  INFO 30336 --- [ClusteredData-Warehouse] [main] C.ClusteredDataWarehouseApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2024-05-09T20:50:29.529+03:00  INFO 30336 --- [ClusteredData-Warehouse] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-09T20:50:29.620+03:00  INFO 30336 --- [ClusteredData-Warehouse] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 1 JPA repository interface.
+2024-05-09T20:50:30.299+03:00  INFO 30336 --- [ClusteredData-Warehouse] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-09T20:50:30.378+03:00  INFO 30336 --- [ClusteredData-Warehouse] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-09T20:50:30.431+03:00  INFO 30336 --- [ClusteredData-Warehouse] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-09T20:50:31.039+03:00  INFO 30336 --- [ClusteredData-Warehouse] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-09T20:50:31.080+03:00  INFO 30336 --- [ClusteredData-Warehouse] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-09T20:50:31.579+03:00  INFO 30336 --- [ClusteredData-Warehouse] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@49190ed6
+2024-05-09T20:50:31.581+03:00  INFO 30336 --- [ClusteredData-Warehouse] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-09T20:50:32.927+03:00  INFO 30336 --- [ClusteredData-Warehouse] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-09T20:50:32.997+03:00  INFO 30336 --- [ClusteredData-Warehouse] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T20:50:33.705+03:00  WARN 30336 --- [ClusteredData-Warehouse] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-09T20:50:34.619+03:00  INFO 30336 --- [ClusteredData-Warehouse] [main] C.ClusteredDataWarehouseApplicationTests : Started ClusteredDataWarehouseApplicationTests in 6.463 seconds (process running for 7.708)
+2024-05-09T20:50:35.859+03:00  INFO 30336 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Validating currencies: fromCurrencyISOCode=JOD, toCurrencyISOCode=invalid
+2024-05-09T20:50:36.049+03:00  INFO 30336 --- [ClusteredData-Warehouse] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T20:50:36.056+03:00  INFO 30336 --- [ClusteredData-Warehouse] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-09T20:50:36.080+03:00  INFO 30336 --- [ClusteredData-Warehouse] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-09T20:52:27.309+03:00  INFO 77104 --- [ClusteredData-Warehouse] [main] C.ClusteredDataWarehouseApplicationTests : Starting ClusteredDataWarehouseApplicationTests using Java 20.0.2 with PID 77104 (started by Samer in C:\Users\Samer\IdeaProjects\ClusteredData-Warehouse)
+2024-05-09T20:52:27.310+03:00  INFO 77104 --- [ClusteredData-Warehouse] [main] C.ClusteredDataWarehouseApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2024-05-09T20:52:28.357+03:00  INFO 77104 --- [ClusteredData-Warehouse] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-09T20:52:28.438+03:00  INFO 77104 --- [ClusteredData-Warehouse] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 1 JPA repository interface.
+2024-05-09T20:52:29.084+03:00  INFO 77104 --- [ClusteredData-Warehouse] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-09T20:52:29.146+03:00  INFO 77104 --- [ClusteredData-Warehouse] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-09T20:52:29.196+03:00  INFO 77104 --- [ClusteredData-Warehouse] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-09T20:52:29.651+03:00  INFO 77104 --- [ClusteredData-Warehouse] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-09T20:52:29.693+03:00  INFO 77104 --- [ClusteredData-Warehouse] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-09T20:52:30.137+03:00  INFO 77104 --- [ClusteredData-Warehouse] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@49190ed6
+2024-05-09T20:52:30.139+03:00  INFO 77104 --- [ClusteredData-Warehouse] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-09T20:52:31.427+03:00  INFO 77104 --- [ClusteredData-Warehouse] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-09T20:52:31.483+03:00  INFO 77104 --- [ClusteredData-Warehouse] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T20:52:32.082+03:00  WARN 77104 --- [ClusteredData-Warehouse] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-09T20:52:33.000+03:00  INFO 77104 --- [ClusteredData-Warehouse] [main] C.ClusteredDataWarehouseApplicationTests : Started ClusteredDataWarehouseApplicationTests in 6.073 seconds (process running for 7.344)
+2024-05-09T20:52:34.257+03:00  INFO 77104 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Validating currencies: fromCurrencyISOCode=JOD, toCurrencyISOCode=USD
+2024-05-09T20:52:34.264+03:00  INFO 77104 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Currency validation successful
+2024-05-09T20:52:34.264+03:00  INFO 77104 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Validating future timestamp: localDateTime=2012-01-22T12:12:12
+2024-05-09T20:52:34.264+03:00  INFO 77104 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Deal timestamp is present or past
+2024-05-09T20:52:34.264+03:00  INFO 77104 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Trying to save Deal with ID [3]
+2024-05-09T20:52:34.431+03:00  INFO 77104 --- [ClusteredData-Warehouse] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T20:52:34.440+03:00  INFO 77104 --- [ClusteredData-Warehouse] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-09T20:52:34.463+03:00  INFO 77104 --- [ClusteredData-Warehouse] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-09T21:20:18.966+03:00  INFO 76168 --- [ClusteredData-Warehouse] [main] C.ClusteredDataWarehouseApplicationTests : Starting ClusteredDataWarehouseApplicationTests using Java 20.0.2 with PID 76168 (started by Samer in C:\Users\Samer\IdeaProjects\ClusteredData-Warehouse)
+2024-05-09T21:20:18.967+03:00  INFO 76168 --- [ClusteredData-Warehouse] [main] C.ClusteredDataWarehouseApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2024-05-09T21:20:19.905+03:00  INFO 76168 --- [ClusteredData-Warehouse] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-09T21:20:19.997+03:00  INFO 76168 --- [ClusteredData-Warehouse] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 76 ms. Found 1 JPA repository interface.
+2024-05-09T21:20:20.666+03:00  INFO 76168 --- [ClusteredData-Warehouse] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-09T21:20:20.748+03:00  INFO 76168 --- [ClusteredData-Warehouse] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-09T21:20:20.804+03:00  INFO 76168 --- [ClusteredData-Warehouse] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-09T21:20:21.236+03:00  INFO 76168 --- [ClusteredData-Warehouse] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-09T21:20:21.291+03:00  INFO 76168 --- [ClusteredData-Warehouse] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-09T21:20:21.760+03:00  INFO 76168 --- [ClusteredData-Warehouse] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@49190ed6
+2024-05-09T21:20:21.762+03:00  INFO 76168 --- [ClusteredData-Warehouse] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-09T21:20:22.938+03:00  INFO 76168 --- [ClusteredData-Warehouse] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-09T21:20:23.002+03:00  INFO 76168 --- [ClusteredData-Warehouse] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T21:20:23.562+03:00  WARN 76168 --- [ClusteredData-Warehouse] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-09T21:20:24.387+03:00  INFO 76168 --- [ClusteredData-Warehouse] [main] C.ClusteredDataWarehouseApplicationTests : Started ClusteredDataWarehouseApplicationTests in 5.805 seconds (process running for 7.092)
+2024-05-09T21:20:25.496+03:00  INFO 76168 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Validating currencies: fromCurrencyISOCode=JOD, toCurrencyISOCode=USD
+2024-05-09T21:20:25.504+03:00  INFO 76168 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Currency validation successful
+2024-05-09T21:20:25.504+03:00  INFO 76168 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Validating future timestamp: localDateTime=2012-01-22T12:12:12
+2024-05-09T21:20:25.504+03:00  INFO 76168 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Deal timestamp is present or past
+2024-05-09T21:20:25.504+03:00  INFO 76168 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Trying to save Deal with ID [3]
+2024-05-09T21:20:25.676+03:00  INFO 76168 --- [ClusteredData-Warehouse] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T21:20:25.682+03:00  INFO 76168 --- [ClusteredData-Warehouse] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-09T21:20:25.709+03:00  INFO 76168 --- [ClusteredData-Warehouse] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-09T21:20:35.480+03:00  INFO 79604 --- [ClusteredData-Warehouse] [main] C.ClusteredDataWarehouseApplicationTests : Starting ClusteredDataWarehouseApplicationTests using Java 20.0.2 with PID 79604 (started by Samer in C:\Users\Samer\IdeaProjects\ClusteredData-Warehouse)
+2024-05-09T21:20:35.482+03:00  INFO 79604 --- [ClusteredData-Warehouse] [main] C.ClusteredDataWarehouseApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2024-05-09T21:20:36.540+03:00  INFO 79604 --- [ClusteredData-Warehouse] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-09T21:20:36.623+03:00  INFO 79604 --- [ClusteredData-Warehouse] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 1 JPA repository interface.
+2024-05-09T21:20:37.242+03:00  INFO 79604 --- [ClusteredData-Warehouse] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-09T21:20:37.301+03:00  INFO 79604 --- [ClusteredData-Warehouse] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-09T21:20:37.347+03:00  INFO 79604 --- [ClusteredData-Warehouse] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-09T21:20:37.721+03:00  INFO 79604 --- [ClusteredData-Warehouse] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-09T21:20:37.762+03:00  INFO 79604 --- [ClusteredData-Warehouse] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-09T21:20:38.197+03:00  INFO 79604 --- [ClusteredData-Warehouse] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6f3b13d0
+2024-05-09T21:20:38.199+03:00  INFO 79604 --- [ClusteredData-Warehouse] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-09T21:20:39.421+03:00  INFO 79604 --- [ClusteredData-Warehouse] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-09T21:20:39.487+03:00  INFO 79604 --- [ClusteredData-Warehouse] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T21:20:40.147+03:00  WARN 79604 --- [ClusteredData-Warehouse] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-09T21:20:41.007+03:00  INFO 79604 --- [ClusteredData-Warehouse] [main] C.ClusteredDataWarehouseApplicationTests : Started ClusteredDataWarehouseApplicationTests in 5.949 seconds (process running for 7.157)
+2024-05-09T21:20:42.028+03:00  INFO 79604 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Trying to get all deals
+2024-05-09T21:20:42.040+03:00  INFO 79604 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Deals were retrieved successfully
+2024-05-09T21:20:42.184+03:00  INFO 79604 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Validating currencies: fromCurrencyISOCode=invalid, toCurrencyISOCode=USD
+2024-05-09T21:20:42.233+03:00  INFO 79604 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Validating currencies: fromCurrencyISOCode=JOD, toCurrencyISOCode=invalid
+2024-05-09T21:20:42.245+03:00  INFO 79604 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Trying to get all deals
+2024-05-09T21:20:42.246+03:00  INFO 79604 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : No deals were found
+2024-05-09T21:20:42.256+03:00  INFO 79604 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Trying to get deal with ID [1]
+2024-05-09T21:20:42.265+03:00  INFO 79604 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Deal with id [1] is successfully retrieved
+2024-05-09T21:20:42.287+03:00  INFO 79604 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Trying to get deal with ID [9999]
+2024-05-09T21:20:42.299+03:00  INFO 79604 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Validating currencies: fromCurrencyISOCode=JOD, toCurrencyISOCode=USD
+2024-05-09T21:20:42.300+03:00  INFO 79604 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Currency validation successful
+2024-05-09T21:20:42.300+03:00  INFO 79604 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Validating future timestamp: localDateTime=2012-01-22T12:12:12
+2024-05-09T21:20:42.300+03:00  INFO 79604 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Deal timestamp is present or past
+2024-05-09T21:20:42.300+03:00  INFO 79604 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Trying to save Deal with ID [5]
+2024-05-09T21:20:42.302+03:00  INFO 79604 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Deal with ID [5] successfully saved
+2024-05-09T21:20:42.314+03:00  INFO 79604 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Validating currencies: fromCurrencyISOCode=JOD, toCurrencyISOCode=USD
+2024-05-09T21:20:42.314+03:00  INFO 79604 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Currency validation successful
+2024-05-09T21:20:42.315+03:00  INFO 79604 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Validating future timestamp: localDateTime=2012-01-22T12:12:12
+2024-05-09T21:20:42.315+03:00  INFO 79604 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Deal timestamp is present or past
+2024-05-09T21:20:42.315+03:00  INFO 79604 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Trying to save Deal with ID [3]
+2024-05-09T21:20:42.355+03:00  INFO 79604 --- [ClusteredData-Warehouse] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T21:20:42.361+03:00  INFO 79604 --- [ClusteredData-Warehouse] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-09T21:20:42.381+03:00  INFO 79604 --- [ClusteredData-Warehouse] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-09T21:26:44.791+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] C.ClusteredDataWarehouseApplication      : Starting ClusteredDataWarehouseApplication using Java 20.0.2 with PID 77432 (C:\Users\Samer\IdeaProjects\ClusteredData-Warehouse\target\classes started by Samer in C:\Users\Samer\IdeaProjects\ClusteredData-Warehouse)
+2024-05-09T21:26:44.793+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] C.ClusteredDataWarehouseApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-05-09T21:26:44.846+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-09T21:26:44.848+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-05-09T21:26:45.643+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-09T21:26:45.722+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71 ms. Found 1 JPA repository interface.
+2024-05-09T21:26:46.396+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 12345 (http)
+2024-05-09T21:26:46.401+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.37] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [2.0.5]
+2024-05-09T21:26:46.402+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.37] using APR version [1.7.4].
+2024-05-09T21:26:46.406+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1u  30 May 2023]
+2024-05-09T21:26:46.417+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-09T21:26:46.418+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-09T21:26:46.480+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-09T21:26:46.480+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1632 ms
+2024-05-09T21:26:46.653+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-09T21:26:46.722+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-09T21:26:46.759+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-09T21:26:47.021+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-09T21:26:47.049+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-09T21:26:47.395+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1d3b1db6
+2024-05-09T21:26:47.397+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-09T21:26:48.522+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-09T21:26:48.571+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T21:26:48.945+03:00  WARN 77432 --- [ClusteredData-Warehouse] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-09T21:26:49.336+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-05-09T21:26:49.374+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 12345 (http) with context path ''
+2024-05-09T21:26:49.385+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] C.ClusteredDataWarehouseApplication      : Started ClusteredDataWarehouseApplication in 5.031 seconds (process running for 5.818)
+2024-05-09T21:26:56.779+03:00  INFO 77432 --- [ClusteredData-Warehouse] [http-nio-12345-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-09T21:26:56.781+03:00  INFO 77432 --- [ClusteredData-Warehouse] [http-nio-12345-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-09T21:26:56.783+03:00  INFO 77432 --- [ClusteredData-Warehouse] [http-nio-12345-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-05-09T21:26:56.812+03:00 ERROR 77432 --- [ClusteredData-Warehouse] [http-nio-12345-exec-1] C.exception.ExceptionHandler             : An unexpected error occurred: 
+
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:267) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:441) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:382) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:127) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:68) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:507) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1283) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1065) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at java.base/java.lang.Thread.run(Thread.java:1623) ~[na:na]
+
+2024-05-09T21:26:56.921+03:00  WARN 77432 --- [ClusteredData-Warehouse] [http-nio-12345-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2024-05-09T21:26:58.227+03:00 ERROR 77432 --- [ClusteredData-Warehouse] [http-nio-12345-exec-2] C.exception.ExceptionHandler             : An unexpected error occurred: 
+
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:267) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:441) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:382) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:127) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:68) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:507) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1283) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1065) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at java.base/java.lang.Thread.run(Thread.java:1623) ~[na:na]
+
+2024-05-09T21:26:58.229+03:00  WARN 77432 --- [ClusteredData-Warehouse] [http-nio-12345-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2024-05-09T21:27:03.214+03:00  INFO 77432 --- [ClusteredData-Warehouse] [http-nio-12345-exec-7] C.service.FXDealsService                 : Trying to get all deals
+2024-05-09T21:27:03.497+03:00  INFO 77432 --- [ClusteredData-Warehouse] [http-nio-12345-exec-7] C.service.FXDealsService                 : Deals were retrieved successfully
+2024-05-09T21:29:14.698+03:00 ERROR 77432 --- [ClusteredData-Warehouse] [http-nio-12345-exec-9] C.exception.ExceptionHandler             : An unexpected error occurred: 
+
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource getById/69.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at java.base/java.lang.Thread.run(Thread.java:1623) ~[na:na]
+
+2024-05-09T21:29:14.701+03:00  WARN 77432 --- [ClusteredData-Warehouse] [http-nio-12345-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource getById/69.]
+2024-05-09T21:29:54.832+03:00 ERROR 77432 --- [ClusteredData-Warehouse] [http-nio-12345-exec-5] C.exception.ExceptionHandler             : An unexpected error occurred: 
+
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource getById/%7B69%7D.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at java.base/java.lang.Thread.run(Thread.java:1623) ~[na:na]
+
+2024-05-09T21:29:54.834+03:00  WARN 77432 --- [ClusteredData-Warehouse] [http-nio-12345-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource getById/%7B69%7D.]
+2024-05-09T21:30:18.686+03:00 ERROR 77432 --- [ClusteredData-Warehouse] [http-nio-12345-exec-6] C.exception.ExceptionHandler             : An unexpected error occurred: 
+
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource getById.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at java.base/java.lang.Thread.run(Thread.java:1623) ~[na:na]
+
+2024-05-09T21:30:18.688+03:00  WARN 77432 --- [ClusteredData-Warehouse] [http-nio-12345-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource getById.]
+2024-05-09T21:31:45.581+03:00  INFO 77432 --- [ClusteredData-Warehouse] [http-nio-12345-exec-4] C.service.FXDealsService                 : Trying to get deal with ID [69]
+2024-05-09T21:31:45.607+03:00  INFO 77432 --- [ClusteredData-Warehouse] [http-nio-12345-exec-4] C.service.FXDealsService                 : Deal with id [69] is successfully retrieved
+2024-05-09T21:37:57.919+03:00  INFO 77432 --- [ClusteredData-Warehouse] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 17 class path changes (0 additions, 15 deletions, 2 modifications)
+2024-05-09T21:37:57.950+03:00  INFO 77432 --- [ClusteredData-Warehouse] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T21:37:57.955+03:00  INFO 77432 --- [ClusteredData-Warehouse] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-09T21:37:57.968+03:00  INFO 77432 --- [ClusteredData-Warehouse] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-09T21:37:58.065+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] C.ClusteredDataWarehouseApplication      : Starting ClusteredDataWarehouseApplication using Java 20.0.2 with PID 77432 (C:\Users\Samer\IdeaProjects\ClusteredData-Warehouse\target\classes started by Samer in C:\Users\Samer\IdeaProjects\ClusteredData-Warehouse)
+2024-05-09T21:37:58.066+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] C.ClusteredDataWarehouseApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-05-09T21:37:58.223+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-09T21:37:58.225+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2024-05-09T21:37:58.329+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 12345 (http)
+2024-05-09T21:37:58.330+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.37] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [2.0.5]
+2024-05-09T21:37:58.330+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.37] using APR version [1.7.4].
+2024-05-09T21:37:58.330+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1u  30 May 2023]
+2024-05-09T21:37:58.332+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-09T21:37:58.332+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-09T21:37:58.350+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-09T21:37:58.350+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 283 ms
+2024-05-09T21:37:58.381+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-09T21:37:58.384+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-09T21:37:58.390+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-09T21:37:58.391+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-05-09T21:37:58.407+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@e4e757b
+2024-05-09T21:37:58.408+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-05-09T21:37:58.423+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-09T21:37:58.424+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T21:37:58.447+03:00  WARN 77432 --- [ClusteredData-Warehouse] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-09T21:37:58.580+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-05-09T21:37:58.595+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 12345 (http) with context path ''
+2024-05-09T21:37:58.602+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] C.ClusteredDataWarehouseApplication      : Started ClusteredDataWarehouseApplication in 0.564 seconds (process running for 675.035)
+2024-05-09T21:37:58.605+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-05-09T21:38:01.438+03:00  INFO 77432 --- [ClusteredData-Warehouse] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 15 class path changes (15 additions, 0 deletions, 0 modifications)
+2024-05-09T21:38:01.454+03:00  INFO 77432 --- [ClusteredData-Warehouse] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T21:38:01.455+03:00  INFO 77432 --- [ClusteredData-Warehouse] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-05-09T21:38:01.461+03:00  INFO 77432 --- [ClusteredData-Warehouse] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-05-09T21:38:01.561+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] C.ClusteredDataWarehouseApplication      : Starting ClusteredDataWarehouseApplication using Java 20.0.2 with PID 77432 (C:\Users\Samer\IdeaProjects\ClusteredData-Warehouse\target\classes started by Samer in C:\Users\Samer\IdeaProjects\ClusteredData-Warehouse)
+2024-05-09T21:38:01.561+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] C.ClusteredDataWarehouseApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-05-09T21:38:01.776+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-09T21:38:01.790+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 1 JPA repository interface.
+2024-05-09T21:38:01.879+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 12345 (http)
+2024-05-09T21:38:01.880+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.37] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [2.0.5]
+2024-05-09T21:38:01.880+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.37] using APR version [1.7.4].
+2024-05-09T21:38:01.880+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1u  30 May 2023]
+2024-05-09T21:38:01.880+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-09T21:38:01.881+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-09T21:38:01.897+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-09T21:38:01.897+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 333 ms
+2024-05-09T21:38:01.929+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-09T21:38:01.931+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-09T21:38:01.935+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-09T21:38:01.936+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-05-09T21:38:01.950+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@18ef418a
+2024-05-09T21:38:01.950+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-05-09T21:38:02.004+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-09T21:38:02.013+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T21:38:02.094+03:00  WARN 77432 --- [ClusteredData-Warehouse] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-09T21:38:02.192+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-05-09T21:38:02.206+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 12345 (http) with context path ''
+2024-05-09T21:38:02.211+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] C.ClusteredDataWarehouseApplication      : Started ClusteredDataWarehouseApplication in 0.689 seconds (process running for 678.644)
+2024-05-09T21:38:02.213+03:00  INFO 77432 --- [ClusteredData-Warehouse] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-05-09T21:38:04.272+03:00  INFO 79900 --- [ClusteredData-Warehouse] [main] C.ClusteredDataWarehouseApplicationTests : Starting ClusteredDataWarehouseApplicationTests using Java 20.0.2 with PID 79900 (started by Samer in C:\Users\Samer\IdeaProjects\ClusteredData-Warehouse)
+2024-05-09T21:38:04.274+03:00  INFO 79900 --- [ClusteredData-Warehouse] [main] C.ClusteredDataWarehouseApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2024-05-09T21:38:05.310+03:00  INFO 79900 --- [ClusteredData-Warehouse] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-09T21:38:05.411+03:00  INFO 79900 --- [ClusteredData-Warehouse] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 87 ms. Found 1 JPA repository interface.
+2024-05-09T21:38:06.137+03:00  INFO 79900 --- [ClusteredData-Warehouse] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-09T21:38:06.218+03:00  INFO 79900 --- [ClusteredData-Warehouse] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-09T21:38:06.269+03:00  INFO 79900 --- [ClusteredData-Warehouse] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-09T21:38:06.750+03:00  INFO 79900 --- [ClusteredData-Warehouse] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-09T21:38:06.788+03:00  INFO 79900 --- [ClusteredData-Warehouse] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-09T21:38:07.240+03:00  INFO 79900 --- [ClusteredData-Warehouse] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@382faf51
+2024-05-09T21:38:07.242+03:00  INFO 79900 --- [ClusteredData-Warehouse] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-09T21:38:08.451+03:00  INFO 79900 --- [ClusteredData-Warehouse] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-09T21:38:08.529+03:00  INFO 79900 --- [ClusteredData-Warehouse] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T21:38:09.144+03:00  WARN 79900 --- [ClusteredData-Warehouse] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-09T21:38:09.915+03:00  INFO 79900 --- [ClusteredData-Warehouse] [main] C.ClusteredDataWarehouseApplicationTests : Started ClusteredDataWarehouseApplicationTests in 6.069 seconds (process running for 7.407)
+2024-05-09T21:38:11.016+03:00  INFO 79900 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Trying to get all deals
+2024-05-09T21:38:11.029+03:00  INFO 79900 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Deals were retrieved successfully
+2024-05-09T21:38:11.159+03:00  INFO 79900 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Validating currencies: fromCurrencyISOCode=invalid, toCurrencyISOCode=USD
+2024-05-09T21:38:11.200+03:00  INFO 79900 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Validating currencies: fromCurrencyISOCode=JOD, toCurrencyISOCode=invalid
+2024-05-09T21:38:11.208+03:00  INFO 79900 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Trying to get all deals
+2024-05-09T21:38:11.208+03:00  INFO 79900 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : No deals were found
+2024-05-09T21:38:11.217+03:00  INFO 79900 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Trying to get deal with ID [1]
+2024-05-09T21:38:11.224+03:00  INFO 79900 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Deal with id [1] is successfully retrieved
+2024-05-09T21:38:11.236+03:00  INFO 79900 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Trying to get deal with ID [9999]
+2024-05-09T21:38:11.244+03:00  INFO 79900 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Validating currencies: fromCurrencyISOCode=JOD, toCurrencyISOCode=USD
+2024-05-09T21:38:11.244+03:00  INFO 79900 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Currency validation successful
+2024-05-09T21:38:11.244+03:00  INFO 79900 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Validating future timestamp: localDateTime=2012-01-22T12:12:12
+2024-05-09T21:38:11.244+03:00  INFO 79900 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Deal timestamp is present or past
+2024-05-09T21:38:11.245+03:00  INFO 79900 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Trying to save Deal with ID [5]
+2024-05-09T21:38:11.246+03:00  INFO 79900 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Deal with ID [5] successfully saved
+2024-05-09T21:38:11.255+03:00  INFO 79900 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Validating currencies: fromCurrencyISOCode=JOD, toCurrencyISOCode=USD
+2024-05-09T21:38:11.255+03:00  INFO 79900 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Currency validation successful
+2024-05-09T21:38:11.255+03:00  INFO 79900 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Validating future timestamp: localDateTime=2012-01-22T12:12:12
+2024-05-09T21:38:11.256+03:00  INFO 79900 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Deal timestamp is present or past
+2024-05-09T21:38:11.256+03:00  INFO 79900 --- [ClusteredData-Warehouse] [main] C.service.FXDealsService                 : Trying to save Deal with ID [3]
+2024-05-09T21:38:11.380+03:00  INFO 79900 --- [ClusteredData-Warehouse] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T21:38:11.387+03:00  INFO 79900 --- [ClusteredData-Warehouse] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-09T21:38:11.409+03:00  INFO 79900 --- [ClusteredData-Warehouse] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

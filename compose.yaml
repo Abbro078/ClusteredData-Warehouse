@@ -1,0 +1,18 @@
+version: "3.2"
+services:
+  clustered-data-warehouse:
+    build: .
+    ports:
+      - 12345:12345
+    depends_on:
+      - mysql
+    restart: always
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+  mysql:
+    image: mysql
+    ports:
+      - 54321:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=admin
+      - MYSQL_DATABASE=root
